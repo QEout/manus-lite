@@ -12,7 +12,7 @@ export async function getStagehandInstance(sessionID: string): Promise<Stagehand
     // 如果不存在，创建新实例
     stagehand = new Stagehand({
       browserbaseSessionID: sessionID,
-      enableCaching: true,
+      // enableCaching: true,
       env: process.env.USE_LOCAL_MODE === 'true' ? "LOCAL" : "BROWSERBASE"
     });
     
